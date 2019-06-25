@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-int main( int argc, char** arcv )
+auto main( int argc, char** arcv ) -> int
 {
     std::cout << "Hello world!" << std::endl;
     
