@@ -6,6 +6,7 @@
  */
 
 #include <iostream>
+#include <stdlib.h>
 
 auto main( int argc, char** arcv ) -> int
 {
