@@ -14,5 +14,3 @@ auto main( int argc, char** arcv ) -> int
     
     return EXIT_SUCCESS;
 }
-
-
