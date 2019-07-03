@@ -8,7 +8,7 @@
 #include <iostream>
 #include <cstdlib>
 
-auto main( int argc, char** arcv ) -> int
+auto main( int argc, char** argv ) -> int
 {
     std::cout << "Hello world!" << std::endl;
     
