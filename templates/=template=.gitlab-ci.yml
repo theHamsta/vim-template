@@ -1,0 +1,9 @@
+tests-and-coverage:
+  image: i10git.cs.fau.de:5005/pycodegen/pycodegen/full
+  script:
+    - export NUM_CORES=$(nproc --all)
+  artifacts:
+    when: always
+    paths:
+      - coverage_report
+      - test-report
