@@ -11,9 +11,3 @@
 def %FILE%():
     pass
 
-
-def main():
-    %FILE%()
-
-if __name__ == '__main__':
-    main()
