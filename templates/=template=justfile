@@ -17,6 +17,9 @@ release:
 release-run: release
     release/pystencils_gui
 
+install: release
+    cd release && sudo ninja install
+
 clean:
 	rm -rf debug
 	rm -rf release
