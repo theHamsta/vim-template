@@ -5,6 +5,14 @@
  * Distributed under terms of the %LICENSE% license.
  */
 
-#pragma once
+#include <stdio.h>
 
-%HERE%
+int main( int argc, char** arcv )
+{
+    %HERE%
+    
+    return EXIT_SUCCESS;
+}
+
+
+
