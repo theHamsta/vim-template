@@ -1,5 +1,7 @@
 project(%HERE%%FDIR%)
 
+cmake_minimum_required(VERSION 3.17)
+
 if(MSVC)
   # Force to always compile with W4
   if(CMAKE_CXX_FLAGS MATCHES "/W[0-4]")
