@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 
-int main( int argc, char** arcv )
+int main( int argc, char** argv )
 {
     %HERE%
     
