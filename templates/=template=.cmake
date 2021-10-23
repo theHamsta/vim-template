@@ -1,6 +1,6 @@
 project(%HERE%%FDIR%)
 
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.20)
 
 if(MSVC)
   # Force to always compile with W4
@@ -10,11 +10,10 @@ if(MSVC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W4")
   endif()
 elseif(CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
-  # Update if necessary
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wno-long-long -pedantic")
+  target_add_compile_options("-Wall -Wno-long-long -pedantic")
 endif()
 
-aux_source_directory(source SOURCES)
+aux_source_directory(src SOURCES)
 
 add_executable(%FDIR%
     main.cpp
@@ -23,11 +22,11 @@ add_executable(%FDIR%
 
 target_include_directories(
     %FDIR%
-PRIVATE
+    PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include/
-	)
+    )
 
 set_target_properties(%FDIR% PROPERTIES
-            CXX_STANDARD 17
-            CXX_EXTENSIONS OFF
-            )
+    CXX_STANDARD 17
+    CXX_EXTENSIONS OFF
+    )
