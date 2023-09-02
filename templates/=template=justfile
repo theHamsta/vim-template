@@ -16,9 +16,6 @@ debug:
     rm -f compile_commands.json .
     ln -s debug/compile_commands.json
 
-run: build
-    debug/pystencils_gui
-    
 release:
     cmake -B release \
         -DCMAKE_BUILD_TYPE=Release \
