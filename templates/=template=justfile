@@ -10,7 +10,7 @@ debug:
         -DCMAKE_CXX_FLAGS="-fdiagnostics-absolute-paths -fdiagnostics-color" \
         -DCMAKE_C_FLAGS="-fdiagnostics-absolute-paths -fdiagnostics-color" \
         -DCMAKE_CUDA_ARCHITECTURES=OFF \
-        -DCMAKE_CUDA_FLAGS="-Wno-deprecated-gpu-targets -allow-unsupported-compiler -arch=native -lineinfo"
+        -DCMAKE_CUDA_FLAGS="-Wno-deprecated-gpu-targets -allow-unsupported-compiler -arch=native -lineinfo" \
         .
     cd debug && cmake --build . --parallel
     rm -f compile_commands.json .
