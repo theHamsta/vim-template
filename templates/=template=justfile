@@ -39,4 +39,4 @@ clean:
 	rm -rf debug
 	rm -rf release
 
-clean-build: clean build
+clean-build: clean debug
