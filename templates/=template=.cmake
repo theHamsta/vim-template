@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.20)
-project(%HERE%%FDIR%)
+cmake_minimum_required(VERSION 3.20..3.30)
+project(%HERE%%FDIR% LANGUAGES CXX)
 
 if (MSVC)
     # warning level 4
