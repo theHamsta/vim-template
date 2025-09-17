@@ -1,6 +1,5 @@
-project(%HERE%%FDIR%)
-
 cmake_minimum_required(VERSION 3.20)
+project(%HERE%%FDIR%)
 
 if (MSVC)
     # warning level 4
@@ -15,6 +14,6 @@ add_executable(%FDIR%
     )
 
 set_target_properties(%FDIR% PROPERTIES
-    CXX_STANDARD 17
+    CXX_STANDARD 20
     CXX_EXTENSIONS OFF
     )
